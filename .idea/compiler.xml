@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="registry" />
+        <module name="auth" />
+        <module name="citizens" />
+        <module name="gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.5" />
+      <module name="ms_auth_admin" target="1.6" />
+      <module name="register" target="17" />
+      <module name="spring-role-jwt" target="1.8" />
+      <module name="swiggy-gateway" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth" options="-parameters" />
+      <module name="citizens" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="ms_auth_admin" options="-parameters" />
+      <module name="register" options="-parameters" />
+      <module name="registry" options="-parameters" />
+      <module name="spring-role-jwt" options="-parameters" />
+      <module name="swiggy-gateway" options="-parameters" />
+    </option>
+  </component>
+</project>
